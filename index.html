@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/spotify.css">
+
+        <title>Testing</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="profile container">
+            <!-- Theme button -->
+            
+            <div class="profile__container grid">
+                
+                <ul class="profile__social">
+                    <a href="https://www.instagram.com/" target="_blank" class="profile__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="profile__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="https://github.com/" target="_blank" class="profile__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </ul>
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+
+            </div>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-active" data-target="#projects">
+                        Track
+                    </button>
+                    <button class="filters__button" data-target="#skills">
+                        Details
+                    </button>
+                </ul>
+
+                <div class="filters__sections">
+                    <!--=============== PROJECTS ===============-->
+                    <div class="projects__content grid filters__active" data-content id="projects">
+                        <main class="global-wrapper">
+                            <div class="spotify">
+                                <h5 class="spotify__title"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                                        <path
+                                            d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z">
+                                        </path>
+                                    </svg> Currently Playing</h5>
+                                <div class="spotify__main">
+                                    <div class="spotify__image">
+                                        <div class="spotify__logo"><svg viewBox="0 0 147 147" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M73.5 0C32.9268 0 0 32.9268 0 73.5C0 114.073 32.9268 147 73.5 147C114.073 147 147 114.073 147 73.5C147 32.9268 114.073 0 73.5 0ZM103.345 108.146C102.1 108.146 101.329 107.76 100.173 107.079C81.6798 95.9353 60.1633 95.4611 38.9135 99.8177C37.7577 100.114 36.2462 100.588 35.3867 100.588C32.5119 100.588 30.704 98.3062 30.704 95.9056C30.704 92.853 32.5119 91.4008 34.7347 90.9266C59.0075 85.5623 83.8137 86.0365 104.975 98.6915C106.782 99.8474 107.849 100.885 107.849 103.582C107.849 106.279 105.745 108.146 103.345 108.146V108.146ZM111.317 88.7038C109.776 88.7038 108.738 88.0222 107.672 87.4591C89.1484 76.4933 61.5266 72.0774 36.9575 78.7458C35.5349 79.131 34.7643 79.5163 33.4306 79.5163C30.2595 79.5163 27.681 76.9379 27.681 73.7667C27.681 70.5956 29.2222 68.4913 32.2748 67.6319C40.5139 65.3202 48.9308 63.6012 61.2599 63.6012C80.4944 63.6012 99.0768 68.3728 113.718 77.0861C116.118 78.5087 117.067 80.3462 117.067 82.9246C117.037 86.1254 114.547 88.7038 111.317 88.7038V88.7038ZM120.504 66.1204C118.963 66.1204 118.015 65.7351 116.681 64.9645C95.5796 52.3687 57.8516 49.3458 33.4306 56.1623C32.3637 56.4587 31.03 56.9329 29.6075 56.9329C25.6954 56.9329 22.702 53.8802 22.702 49.9385C22.702 45.9079 25.1915 43.6258 27.8589 42.8552C38.2911 39.8026 49.9681 38.3504 62.6825 38.3504C84.3175 38.3504 106.99 42.8552 123.557 52.5169C125.869 53.8506 127.38 55.6881 127.38 59.2149C127.38 63.2456 124.12 66.1204 120.504 66.1204V66.1204Z"
+                                                    fill="#20CF5E"></path>
+                                            </svg></div>
+                                        <div class="spotify__record">
+                                            <div class="record record--stopped"><span class="record__center__black"></span><span
+                                                    class="record__center__white"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="spotify__details" itemscope="" itemtype="https://schema.org/MusicGroup">
+                                        <div itemprop="track" itemscope="" itemtype="https://schema.org/MusicRecording">
+                                            <h6 itemprop="name"></h6>
+                                        </div>
+                                        <p itemprop="name">Not Playing</p>
+                                        <div class="sw sw--pause"><svg width="302" height="28" viewBox="0 0 344 28" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line class="" x1="7" y1="8" x2="7" y2="20" stroke-width="2" style="animation-duration: 379ms;">
+                                                </line>
+                                                <line class="" x1="14" y1="8" x2="14" y2="20" stroke-width="2" style="animation-duration: 318ms;">
+                                                </line>
+                                                <line class="" x1="21" y1="8" x2="21" y2="20" stroke-width="2" style="animation-duration: 506ms;">
+                                                </line>
+                                                <line class="" x1="28" y1="8" x2="28" y2="20" stroke-width="2" style="animation-duration: 576ms;">
+                                                </line>
+                                                <line class="" x1="35" y1="8" x2="35" y2="20" stroke-width="2" style="animation-duration: 767ms;">
+                                                </line>
+                                                <line class="" x1="42" y1="8" x2="42" y2="20" stroke-width="2" style="animation-duration: 454ms;">
+                                                </line>
+                                                <line class="" x1="49" y1="8" x2="49" y2="20" stroke-width="2" style="animation-duration: 732ms;">
+                                                </line>
+                                                <line class="" x1="56" y1="8" x2="56" y2="20" stroke-width="2" style="animation-duration: 631ms;">
+                                                </line>
+                                                <line class="" x1="63" y1="8" x2="63" y2="20" stroke-width="2" style="animation-duration: 706ms;">
+                                                </line>
+                                                <line class="" x1="70" y1="8" x2="70" y2="20" stroke-width="2" style="animation-duration: 494ms;">
+                                                </line>
+                                                <line class="" x1="77" y1="8" x2="77" y2="20" stroke-width="2" style="animation-duration: 788ms;">
+                                                </line>
+                                                <line class="" x1="84" y1="8" x2="84" y2="20" stroke-width="2" style="animation-duration: 485ms;">
+                                                </line>
+                                                <line class="" x1="91" y1="8" x2="91" y2="20" stroke-width="2" style="animation-duration: 381ms;">
+                                                </line>
+                                                <line class="" x1="98" y1="8" x2="98" y2="20" stroke-width="2" style="animation-duration: 715ms;">
+                                                </line>
+                                                <line class="" x1="105" y1="8" x2="105" y2="20" stroke-width="2" style="animation-duration: 432ms;">
+                                                </line>
+                                                <line class="" x1="112" y1="8" x2="112" y2="20" stroke-width="2" style="animation-duration: 386ms;">
+                                                </line>
+                                                <line class="" x1="119" y1="8" x2="119" y2="20" stroke-width="2" style="animation-duration: 372ms;">
+                                                </line>
+                                                <line class="" x1="126" y1="8" x2="126" y2="20" stroke-width="2" style="animation-duration: 372ms;">
+                                                </line>
+                                                <line class="" x1="133" y1="8" x2="133" y2="20" stroke-width="2" style="animation-duration: 300ms;">
+                                                </line>
+                                                <line class="" x1="140" y1="8" x2="140" y2="20" stroke-width="2" style="animation-duration: 423ms;">
+                                                </line>
+                                                <line class="" x1="147" y1="8" x2="147" y2="20" stroke-width="2" style="animation-duration: 642ms;">
+                                                </line>
+                                                <line class="" x1="154" y1="8" x2="154" y2="20" stroke-width="2" style="animation-duration: 664ms;">
+                                                </line>
+                                                <line class="" x1="161" y1="8" x2="161" y2="20" stroke-width="2" style="animation-duration: 431ms;">
+                                                </line>
+                                                <line class="" x1="168" y1="8" x2="168" y2="20" stroke-width="2" style="animation-duration: 302ms;">
+                                                </line>
+                                                <line class="" x1="175" y1="8" x2="175" y2="20" stroke-width="2" style="animation-duration: 332ms;">
+                                                </line>
+                                                <line class="" x1="182" y1="8" x2="182" y2="20" stroke-width="2" style="animation-duration: 416ms;">
+                                                </line>
+                                                <line class="" x1="189" y1="8" x2="189" y2="20" stroke-width="2" style="animation-duration: 798ms;">
+                                                </line>
+                                                <line class="" x1="196" y1="8" x2="196" y2="20" stroke-width="2" style="animation-duration: 632ms;">
+                                                </line>
+                                                <line class="" x1="203" y1="8" x2="203" y2="20" stroke-width="2" style="animation-duration: 777ms;">
+                                                </line>
+                                                <line class="" x1="210" y1="8" x2="210" y2="20" stroke-width="2" style="animation-duration: 772ms;">
+                                                </line>
+                                                <line class="" x1="217" y1="8" x2="217" y2="20" stroke-width="2" style="animation-duration: 745ms;">
+                                                </line>
+                                                <line class="" x1="224" y1="8" x2="224" y2="20" stroke-width="2" style="animation-duration: 711ms;">
+                                                </line>
+                                                <line class="" x1="231" y1="8" x2="231" y2="20" stroke-width="2" style="animation-duration: 310ms;">
+                                                </line>
+                                                <line class="" x1="238" y1="8" x2="238" y2="20" stroke-width="2" style="animation-duration: 414ms;">
+                                                </line>
+                                                <line class="" x1="245" y1="8" x2="245" y2="20" stroke-width="2" style="animation-duration: 480ms;">
+                                                </line>
+                                                <line class="" x1="252" y1="8" x2="252" y2="20" stroke-width="2" style="animation-duration: 370ms;">
+                                                </line>
+                                                <line class="" x1="259" y1="8" x2="259" y2="20" stroke-width="2" style="animation-duration: 589ms;">
+                                                </line>
+                                                <line class="" x1="266" y1="8" x2="266" y2="20" stroke-width="2" style="animation-duration: 596ms;">
+                                                </line>
+                                                <line class="" x1="273" y1="8" x2="273" y2="20" stroke-width="2" style="animation-duration: 307ms;">
+                                                </line>
+                                                <line class="" x1="280" y1="8" x2="280" y2="20" stroke-width="2" style="animation-duration: 385ms;">
+                                                </line>
+                                                <line class="" x1="287" y1="8" x2="287" y2="20" stroke-width="2" style="animation-duration: 524ms;">
+                                                </line>
+                                                <line class="" x1="294" y1="8" x2="294" y2="20" stroke-width="2" style="animation-duration: 754ms;">
+                                                </line>
+                                                <line class="" x1="301" y1="8" x2="301" y2="20" stroke-width="2" style="animation-duration: 659ms;">
+                                                </line>
+                                                <line class="" x1="308" y1="8" x2="308" y2="20" stroke-width="2" style="animation-duration: 544ms;">
+                                                </line>
+                                                <line class="" x1="315" y1="8" x2="315" y2="20" stroke-width="2" style="animation-duration: 553ms;">
+                                                </line>
+                                                <line class="" x1="322" y1="8" x2="322" y2="20" stroke-width="2" style="animation-duration: 423ms;">
+                                                </line>
+                                                <line class="" x1="329" y1="8" x2="329" y2="20" stroke-width="2" style="animation-duration: 605ms;">
+                                                </line>
+                                                <line class="" x1="336" y1="8" x2="336" y2="20" stroke-width="2" style="animation-duration: 719ms;">
+                                                </line>
+                                                <line class="" x1="343" y1="8" x2="343" y2="20" stroke-width="2" style="animation-duration: 751ms;">
+                                                </line>
+                                                <line class="" x1="350" y1="8" x2="350" y2="20" stroke-width="2"></line>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                            </div>
+                            </main>
+                    </div>
+
+                    <!--=============== SKILLS ===============-->
+                    <div class="skills__content grid" data-content id="skills">
+                        <div class="skills__area">
+                            <h3 class="skills__title">Frontend Developer</h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">HTML</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">CSS</h3>
+                                            <span class="skills__level">Advanced</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">JavaScript</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">React</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Bootstrap</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Git</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title">Backend Developer</h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">PHP</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">MySQL</h3>
+                                            <span class="skills__level">Advance</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Firebase</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Python</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Node Js</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169;Shuja ur Rahman.
+            </span>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
